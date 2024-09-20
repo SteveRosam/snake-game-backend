@@ -17,7 +17,13 @@ deployments:
     publicAccess:
       enabled: true
       urlPrefix: redis
-    variables: []
+    variables: []    
+    network:
+      serviceName: redis
+      ports:
+        - port: 80
+          targetPort: 6379
+
 
 # This section describes the Topics of the data pipeline
 topics: []
