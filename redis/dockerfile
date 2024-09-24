@@ -8,11 +8,11 @@ RUN apt-get update && apt-get install -y net-tools
 EXPOSE 6379
 
 # Create the start script directly in the Dockerfile
-RUN echo '#!/bin/sh\n' \
-         'redis-server\n' > /usr/local/bin/start-redis.sh
+# RUN echo '#!/bin/sh\n' \
+#          'redis-server\n' > /usr/local/bin/start-redis.sh
 
 # Make the script executable
-RUN chmod +x /usr/local/bin/start-redis.sh
+# RUN chmod +x /usr/local/bin/start-redis.sh
 
 # Set the entrypoint to the start script
-ENTRYPOINT ["/usr/local/bin/start-redis.sh"]
+ENTRYPOINT ["redis-server"]
