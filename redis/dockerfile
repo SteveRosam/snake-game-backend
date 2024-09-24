@@ -9,7 +9,6 @@ EXPOSE 6379
 
 # Create the start script directly in the Dockerfile
 RUN echo '#!/bin/sh\n' \
-         'ifconfig eth0 | grep "inet " | awk "{print \$2}"\n' \
          'redis-server\n' > /usr/local/bin/start-redis.sh
 
 # Make the script executable
