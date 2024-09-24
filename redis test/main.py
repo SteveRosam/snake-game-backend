@@ -3,7 +3,7 @@ import json
 
 # Connect to Redis
 # client = redis.Redis(host='redis', port=6379, decode_responses=True)
-server_url = '10.244.10.96'
+server_url = 'redis'
 port = 80 # 6379
 
 def clear():
