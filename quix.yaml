@@ -17,11 +17,6 @@ deployments:
     publicAccess:
       enabled: true
       urlPrefix: redis
-    network:
-      serviceName: redis
-      ports:
-        - port: 6379
-          targetPort: 6379
 
 # This section describes the Topics of the data pipeline
 topics: []
