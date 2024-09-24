@@ -13,6 +13,8 @@ def clear():
 
 def test_redis():
     print("connecting")
+    client = redis.Redis(host=server_url, port=port, db=0)
+
     # Connect to Redis server
     client = redis.Redis(host=server_url, port=port, db=0)
     print("Connected")
