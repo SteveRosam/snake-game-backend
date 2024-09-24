@@ -18,7 +18,7 @@ print("Connected")
 
 print("Testing 1")
 # Test setting a key
-# client.set('test_key', 'test_value')
+client.set('test_key', 'test_value')
 
 print("Testing 2")
 # Test getting the key
